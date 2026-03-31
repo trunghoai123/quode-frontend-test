@@ -66,7 +66,7 @@ const CommentSection = ({ postId, comments = [] }: CommentSectionProps) => {
                 <div className="text-gray-500 text-xs">
                   {new Date(comment.created_at).toLocaleString()}
                 </div>
-                <p className="mb-0 mt-1 text-base">{comment.content}</p>
+                <p className="mb-2 mt-1 text-base">{comment.content}</p>
               </div>
             </div>
           ))}
@@ -76,8 +76,8 @@ const CommentSection = ({ postId, comments = [] }: CommentSectionProps) => {
         rows={3}
         value={value}
         placeholder="Write a comment"
+        style={{ marginTop: '6px' }}
         onChange={(event) => setValue(event.target.value)}
-        className="mt-3"
       />
       <Button
         type="primary"
