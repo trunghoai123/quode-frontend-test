@@ -37,10 +37,9 @@ const ImagePost = () => {
       {posts.map((post) => (
         <Card
           key={post.id}
-          title={`Post ${post.id}`}
           variant="borderless"
           style={{ marginBottom: '26px' }}
-          className="w-full mb-3 pb-4"
+          className="w-full mb-3 pb-4 min-w-3xl"
         >
           <Carousel arrows infinite>
             {post.image_urls.map((url, index) => (
