@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.BACKEND_URL || 'http://localhost:3000';
+const API_BASE_URL =
+  process.env.BACKEND_URL || 'https://qode-backend-test-production.up.railway.app';
 
 export const createPost = async (post: { imageUrls: string[] }) => {
   try {

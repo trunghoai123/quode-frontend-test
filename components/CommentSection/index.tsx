@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Avatar, Button, Empty, Input, Spin, Typography, message } from 'antd';
+import { Avatar, Button, Input, Spin, Typography, message } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { CommentType } from '@/types';
 import { createComment, getComments } from '@/services/APIs';
